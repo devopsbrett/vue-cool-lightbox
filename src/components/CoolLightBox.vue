@@ -1321,6 +1321,7 @@ export default {
 
     // index change
     onIndexChange(index) {
+      console.log('In index change')
       this.$emit('before-change', index)
       this.imgIndex = index
       this.$emit('on-change', index)
